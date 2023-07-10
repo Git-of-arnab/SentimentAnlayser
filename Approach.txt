@@ -1,0 +1,21 @@
+Imported numpy python library for numerical functions
+imported pandas for making dataframes
+imported scipy.stats library for statistics functions like probability etc
+imported statsmodels.api python library for stats models
+imported matplotlib.pyplot to plot charts
+imported sklearn python library for linear models & others
+Imported nltk for sentiment analysis
+from sklearn.preprocessing imported PolynomialFeatures
+Downloaded nltk english stopwords and the below modules as well:
+"names","stopwords","state_union","twitter_samples","movie_reviews","averaged_perceptron_tagger","vader_lexicon","punkt",'shakespeare'
+
+Seperated the Year_month column for year and month.
+Filled the null values and 'missing' values of month & year with mod() of each respectively
+Proceeded with 1-Hot encoding of object values except for reviewer text.
+Performed sentiment analysis over reviewer text and received the sentiment values, which was appended in the data
+Feature set taken (X)= Year,month,Park location,sentiment value
+Target set taken (Y)= Rating
+
+Taken polynomial function of X as X_poly
+
+Trained different classification model for X_poly,Y and arrived at the xgBoost claasifier model with X polynomial degree=3
